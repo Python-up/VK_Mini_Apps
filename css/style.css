@@ -11,13 +11,6 @@ body{
     position: fixed;
     transform: translate(-50%, -50%);
 }
-#Authorize_main_text{
-    padding: 10px;
-    text-align: center;
-    background: cornsilk;
-    display: block;
-    border-radius: 10px;
-}
 #Authorize_username{
     outline: none;
     display: block;
